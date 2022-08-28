@@ -23,10 +23,11 @@ window.addEventListener("DOMContentLoaded",	() => {
               confidence = (e.results[0][0].confidence * 100).toFixed(1);
 
         //Check if transcript is valid color value
-        if(cssColorNames.includes(transcript)) {
+        if(transcript) {
 
             //Set cube color;
-            colorCube.style.setProperty('--cube-color', transcript);
+            colour_to_choose = cssColorNames[Math.floor(Math.random() * cssColorNames.length)];
+            colorCube.style.setProperty('--cube-color',colour_to_choose );
 
             //Set color name text value
             colorName.textContent = transcript;

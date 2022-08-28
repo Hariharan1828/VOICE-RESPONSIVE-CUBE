@@ -30,7 +30,7 @@ window.addEventListener("DOMContentLoaded",	() => {
             colorCube.style.setProperty('--cube-color',colour_to_choose );
 
             //Set color name text value
-            colorName.textContent = transcript;
+            colorName.textContent = colour_to_choose;
 
         }
 
